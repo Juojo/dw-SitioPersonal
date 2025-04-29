@@ -1,3 +1,12 @@
+:root {
+    --azul: #2260c5;
+    --azul-oscuro: #1a407e;
+}
+
+body {
+    background-color: var(--azul-oscuro);
+}
+
 /* Estilos copiados de https://www.w3schools.com/html/html_tables.asp */
 
 table {
@@ -14,4 +23,49 @@ td, th {
 
 tr:nth-child(even) {
     background-color: #dddddd;
+}
+
+.custom-nav-color {
+    background-color: var(--azul) !important;
+}
+
+.nav-link {
+    color: #e1e1e1;
+}
+
+.centrar-elementos {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 80vw;
+    height: auto;
+    margin: 0 auto;
+
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.8) 0%,
+        rgba(240, 240, 240, 0.6) 100%
+    );
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tabla-materias {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.tabla-materias > h1 {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #fff;
 }

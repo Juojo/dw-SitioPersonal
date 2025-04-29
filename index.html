@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Cursada</title>
-    <!-- Link css custom -->
-    <link rel="stylesheet" href="style.css">
     <!-- Link bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- Link css custom -->
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary custom-nav-color" style="background-color: red;">
         <div class="container-fluid">
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse centrar-elementos" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./paginas/avisos.html">Avisos</a>
@@ -39,44 +39,43 @@
         </div>
     </nav>
 
-    <h1>Home</h1>
-
-    <p><b>Alumno:</b> Juan Martín Miñarro</p>
-
-    <h2>Materias que estoy cursando</h2>
-
-    <table>
-        <tr>
-            <th>Materia</th>
-            <th>Horario</th>
-            <th>Día</th>
-            <th>Modalidad</th>
-        </tr>
-        <tr>
-            <td>Introducción a la algoritmia</td>
-            <td>13:30hs - 17:30hs</td>
-            <td>Lunes</td>
-            <td>Presencial</td>
-        </tr>
-        <tr>
-            <td>Arquitectura de computadores</td>
-            <td>13:30hs - 17:30hs</td>
-            <td>Martes</td>
-            <td>Presencial</td>
-        </tr>
-        <tr>
-            <td>Diseño y desarrollo web</td>
-            <td>18:30hs - 20:30hs</td>
-            <td>Martes</td>
-            <td>Virtual</td>
-        </tr>
-        <tr>
-            <td>Sistemas de información 1</td>
-            <td>13:30hs - 17:30hs</td>
-            <td>Jueves</td>
-            <td>Presencial</td>
-        </tr>
-    </table>
+    <div class="wrapper">
+        <section class="tabla-materias">
+            <h1>Materias que estoy cursando</h1>
+            <table>
+                <tr>
+                    <th>Materia</th>
+                    <th>Horario</th>
+                    <th>Día</th>
+                    <th>Modalidad</th>
+                </tr>
+                <tr>
+                    <td>Introducción a la algoritmia</td>
+                    <td>13:30hs - 17:30hs</td>
+                    <td>Lunes</td>
+                    <td>Presencial</td>
+                </tr>
+                <tr>
+                    <td>Arquitectura de computadores</td>
+                    <td>13:30hs - 17:30hs</td>
+                    <td>Martes</td>
+                    <td>Presencial</td>
+                </tr>
+                <tr>
+                    <td>Diseño y desarrollo web</td>
+                    <td>18:30hs - 20:30hs</td>
+                    <td>Martes</td>
+                    <td>Virtual</td>
+                </tr>
+                <tr>
+                    <td>Sistemas de información 1</td>
+                    <td>13:30hs - 17:30hs</td>
+                    <td>Jueves</td>
+                    <td>Presencial</td>
+                </tr>
+            </table>
+        </section>      
+    </div>
 
     <!-- Script bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
