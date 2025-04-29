@@ -7,24 +7,6 @@ body {
     background-color: var(--azul-oscuro);
 }
 
-/* Estilos copiados de https://www.w3schools.com/html/html_tables.asp */
-
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 70vw;
-}
-
-td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
-
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
-
 .custom-nav-color {
     background-color: var(--azul) !important;
 }
@@ -72,6 +54,24 @@ main > h1 {
 
 footer {
     background-color: #fff;
+}
+
+/* Estilos copiados de https://www.w3schools.com/html/html_tables.asp */
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 70vw;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
 }
 
 @media (max-width: 768px) {
