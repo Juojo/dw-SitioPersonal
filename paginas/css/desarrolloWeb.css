@@ -1,0 +1,55 @@
+.wrapper-desarrollo-web {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper-desarrollo-web > h1 {
+    color: #fff;
+}
+
+.contenido {
+    flex: 1; 
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.izquierda {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 45vw;
+}
+
+.fecha-examen, .bibliografia, .actividades-uva {
+    background: #ddd;
+    padding: 1rem;
+}
+
+.fecha-examen, .bibliografia {
+    height: 40vh;
+}
+
+.actividades-uva {
+    flex: 1;
+    width: 50vw;
+    font-size: 0.8em;
+}
+
+.footer-dw {
+    background: #ddd;
+    text-align: center;
+    padding: 1rem;
+    width: 100vw;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contenido {
+        flex-direction: column;
+    }
+    .izquierda, .actividades-uva {
+        width: 100%;
+    }
+}
