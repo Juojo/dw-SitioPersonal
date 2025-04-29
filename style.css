@@ -57,12 +57,15 @@ tr:nth-child(even) {
     align-items: center;
 }
 
-.tabla-materias {
+main {
     margin-top: 25px;
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.tabla-materias > h1 {
+main > h1 {
     margin-bottom: 20px;
 }
 
