@@ -6,6 +6,8 @@
 
 .wrapper-desarrollo-web > h1 {
     color: #fff;
+    margin-top: 20px;
+    font-weight: 600;
 }
 
 .contenido {
