@@ -74,6 +74,26 @@ tr:nth-child(even) {
     background-color: #dddddd;
 }
 
+.modos {
+    display: flex;
+    justify-content: center;
+}
+
+/* .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+#navbarNav {
+    align-items: left;
+}
+
+.modos > button {
+    width: 10em;
+    margin-right: 20px;
+}
+
 @media (max-width: 768px) {
     table {
         width: 100%;
@@ -82,4 +102,74 @@ tr:nth-child(even) {
     .wrapper {
         width: 98.5vw;
     }
+}
+
+body.modo-oscuro {
+    background-color: #11151a;
+    color: #e1e1e1;
+}
+
+body.modo-oscuro .wrapper {
+    background: linear-gradient(
+        135deg,
+        rgba(34, 44, 54, 0.95) 0%,
+        rgba(17, 21, 26, 0.85) 100%
+    );
+    color: #e1e1e1;
+}
+
+body.modo-oscuro .custom-nav-color {
+    background-color: #222c36 !important;
+}
+
+body.modo-oscuro .nav-link {
+    color: #e1e1e1;
+}
+
+body.modo-oscuro table {
+    background: #1a2230;
+    color: #e1e1e1;
+}
+
+body.modo-oscuro td, 
+body.modo-oscuro th {
+    border-color: #333a4d;
+}
+
+body.modo-oscuro tr:nth-child(even) {
+    background-color: #222c36;
+}
+
+body.modo-oscuro #formulario-contacto {
+    background: #232b36;
+    border-color: #333a4d;
+    box-shadow: 0 2px 16px rgba(34, 44, 54, 0.13);
+}
+
+body.modo-oscuro #formulario-contacto .form-control,
+body.modo-oscuro #formulario-contacto textarea {
+    background: #1a2230;
+    color: #e1e1e1;
+    border-color: #333a4d;
+}
+
+body.modo-oscuro #formulario-contacto .form-control:focus,
+body.modo-oscuro #formulario-contacto textarea:focus {
+    background: #232b36;
+    color: #fff;
+    border-color: #1976d2;
+    box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.13);
+}
+
+body.modo-oscuro #formulario-contacto label.form-label {
+    color: #90caf9;
+}
+
+body.modo-oscuro #formulario-contacto button[type="submit"] {
+    background: linear-gradient(90deg, #333a4d 60%, #1976d2 100%);
+    color: #fff;
+}
+
+body.modo-oscuro #mensaje-validacion {
+    color: #ff8a65;
 }

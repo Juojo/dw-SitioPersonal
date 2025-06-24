@@ -1,0 +1,72 @@
+#mensaje-validacion {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #d7263d; /* Rojo para mensajes de validación */
+}
+
+/* Estilos para el formulario de contacto */
+#formulario-contacto {
+  background: #e3f2fd; /* Azul claro */
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(33, 150, 243, 0.07);
+  max-width: 500px;
+  margin: 2rem auto;
+  border: 1.5px solid #90caf9;
+}
+
+/* Estilos para los inputs y textarea */
+#formulario-contacto .form-control,
+#formulario-contacto textarea {
+  border: 1.5px solid #90caf9;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.2s, background 0.2s;
+  background: #f5faff;
+  color: #1565c0;
+}
+
+#formulario-contacto .form-control:focus,
+#formulario-contacto textarea:focus {
+  border-color: #1976d2;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.13);
+  background: #e3f2fd;
+  color: #0d47a1;
+}
+
+#formulario-contacto textarea {
+  min-height: 100px;
+  width: 100%;
+  resize: vertical;
+}
+
+#formulario-contacto label.form-label {
+  margin-bottom: 0.3rem;
+  color: #1976d2;
+  font-weight: 500;
+}
+
+/* Botón submit personalizado */
+#formulario-contacto button[type="submit"] {
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  margin-top: 0.5rem;
+  background: linear-gradient(90deg, #1976d2 60%, #64b5f6 100%);
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.07);
+}
+
+#formulario-contacto button[type="submit"]:hover {
+  background: linear-gradient(90deg, #1565c0 60%, #42a5f5 100%);
+  box-shadow: 0 4px 16px rgba(25, 118, 210, 0.13);
+  color: #fff;
+}
